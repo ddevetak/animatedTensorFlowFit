@@ -8,7 +8,8 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 x = np.linspace(-math.pi, math.pi, 1000)
-y = np.sin(x**2) + 0.4*np.random.rand(1000)
+#y = np.sin(x**2) + 0.4*np.random.rand(1000)
+y = np.cos(x**3) + 0.4*np.random.rand(1000)
 
 #x1 = np.linspace(-math.pi, math.pi, 10)
 #y1 = np.sin(x**2) + 0.04*np.random.rand(10)
@@ -59,7 +60,7 @@ model = tf.keras.Sequential(
         ]
         )
 
-Iterations = 2000
+Iterations = 3000
 
 #model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate=0.1), loss = "mse", metrics = ["mae"])
 model.compile(optimizer = "Adam", loss = "mse", metrics = ["mae"])
@@ -70,6 +71,6 @@ if __name__ == '__main__':
     # FuncAnimation will call the 'update' function for each frame; here
     # animating over 10 frames, with an interval of 200ms between frames.
     anim = FuncAnimation(fig, update, frames=np.arange(0, Iterations, 20), interval=2)
-    anim.save('./an.gif', writer='imagemagick', fps=500)
+    anim.save('./an1.gif', writer='imagemagick', fps=500)
 
 
