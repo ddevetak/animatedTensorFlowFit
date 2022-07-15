@@ -9,4 +9,4 @@ python animatedRegressor.py
 For relatively complex function like *sin(x^2)* the network performs well for a higher number of steps. 
 
 
-<img src="https://github.com/ddevetak/animatedTensorFlowFit/blob/master/fun1.gif" width="600" height="400">
+<img src="https://github.com/ddevetak/animatedTensorFlowFit/blob/master/an.gif" width="600" height="400">
