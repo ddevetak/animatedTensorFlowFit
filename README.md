@@ -1,5 +1,5 @@
 # animatedTensorFlowFit
-Performs an animated fit of random function using fully connected network in tensor flow
+Performs an animated fit of random function using fully connected network in tensorflow
 
 
 The below code performs an animated fit of a random function using a pyTorch fully connected network. 
