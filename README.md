@@ -4,7 +4,7 @@ Performs an animated fit of random function using fully connected network in ten
 
 The below code performs an animated fit of a random function using a pyTorch fully connected network. 
 ```
-python animatedRegressor.py
+python fit.py
 ```
 For relatively complex function like *sin(x^2)* the network performs well for a higher number of steps. 
 
